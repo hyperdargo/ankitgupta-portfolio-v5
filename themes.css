@@ -1,0 +1,40 @@
+/* Blue Theme */
+[data-theme="blue"] {
+    --primary: #0a0a1a;
+    --secondary: #0088ff;
+    --accent: #0066cc;
+    --text: #e0f0ff;
+    --text-secondary: #a0c0e0;
+    --card-bg: rgba(20, 20, 40, 0.8);
+    --sidebar-bg: rgba(10, 10, 30, 0.95);
+    --terminal-bg: #0a0a2a;
+    --glow: 0 0 20px rgba(0, 136, 255, 0.3);
+    --accent-glow: 0 0 25px rgba(0, 102, 204, 0.4);
+}
+
+/* Red Theme */
+[data-theme="red"] {
+    --primary: #1a0a0a;
+    --secondary: #ff4444;
+    --accent: #cc0000;
+    --text: #ffe0e0;
+    --text-secondary: #e0a0a0;
+    --card-bg: rgba(40, 20, 20, 0.8);
+    --sidebar-bg: rgba(30, 10, 10, 0.95);
+    --terminal-bg: #2a0a0a;
+    --glow: 0 0 20px rgba(255, 68, 68, 0.3);
+    --accent-glow: 0 0 25px rgba(204, 0, 0, 0.4);
+}
+
+/* Theme transition */
+body, .sidebar, .card, .btn, .terminal-container {
+    transition: background-color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.theme-preview {
+    transition: transform 0.3s ease;
+}
+
+.theme-preview:hover {
+    transform: scale(1.1);
+}
